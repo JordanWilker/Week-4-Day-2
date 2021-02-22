@@ -58,15 +58,55 @@
                 </form>
             </div>
         </div>
-        <div class="row" id="cars">
-
+        <div class="row" id="cars"></div>
+        
+        <div class="row">
+            <div class="col">
+                <form class="form-inline" onsubmit="app.housesController.createHouse(event)">
+                    <div class="form-group">
+                        <input type="number" name="bedrooms" id="bedrooms" class="form-control" placeholder="Bedrooms"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="bathrooms" id="bathrooms" class="form-control" placeholder="Bathrooms"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="levels" id="levels" class="form-control" placeholder="Levels"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="imgUrl" id="imgUrl" class="form-control" placeholder="ImgUrl"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="year" id="year" class="form-control" placeholder="Year" 
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="price" id="price" class="form-control" placeholder="Price"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="description" id="description" class="form-control" placeholder="Description"
+                            aria-describedby="helpId">
+                    </div>
+                    <button class="btn btn-info" type="submit">Create</button>
+                </form>
+            </div>
         </div>
-        <hr>
         <div class="row">
             <div class="col">
                 <h1>Houses</h1>
             </div>
         </div>
+        <div class="row" id="houses"></div>
+        <div class="row">
+            <div class="col">
+                <h1>JOBS!!!!</h1>
+            </div>
+        </div>
+        <div class="row" id="jobs"></div>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
