@@ -1,15 +1,25 @@
 import { ProxyState } from "../AppState.js"
+<<<<<<< HEAD
 import { jobsService } from "../Services/JobsService.js"
 
   function _draw(){
     let jobs = ProxyState.jobs
     let template = ""
     jobs.forEach(job=> template += job.Template)
+=======
+import {jobsService} from "../Services/JobsService.js"
+
+function _draw(){
+    let jobs = ProxyState.jobs
+    let template = ""
+    jobs.forEach(car=> template += car.Template)
+>>>>>>> a7121bd2161da285494fa70ed57ae465d8c135c7
     // console.log(template)
     document.getElementById('jobs').innerHTML = template
     console.log(ProxyState.jobs)
   }
 
+<<<<<<< HEAD
 export default class JobsController{
   constructor(){
     //console.log("jobs controller working")
@@ -41,4 +51,12 @@ export default class JobsController{
     jobsService.deleteJob(id)
   }
 
+=======
+
+export default class JobsController {
+    constructor(){
+        _draw()
+        ProxyState.on("jobs",_draw)
+    }
+>>>>>>> a7121bd2161da285494fa70ed57ae465d8c135c7
 }
